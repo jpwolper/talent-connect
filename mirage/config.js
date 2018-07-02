@@ -1,7 +1,7 @@
 export default function() {
   this.namespace = '/api';
 
-  this.get('/contacts', function() {
+  this.get('/contact-list', function() {
     return {
       data: [{
         type: 'contact-list',
