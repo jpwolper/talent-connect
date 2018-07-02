@@ -13,14 +13,6 @@
         <a href="bill@sacksagency.com">bill@sacksagency.com</a>
     </div>
 </div>
-{{#each model as |contact|}}
-<article class="listing">
-    <h3>{{contact.fn}} {{contact.ln}}</h3>
-    <div class="detail phone">
-        <span>Phone:</span> {{contact.p}}
-    </div>
-    <div class="detail email">
-        <span>Email:</span> {{contact.email}}
-    </div>
-</article>
+{{#each model as |contactListing|}}
+  {{contact-listing contact=contactListing}}
 {{/each}}

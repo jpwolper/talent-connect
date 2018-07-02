@@ -9,9 +9,11 @@ module('Acceptance | contact list', function(hooks) {
     await visit('/');
     assert.equal(currentURL(), '/contact-list', 'should redirect automatically');
   });
+
   test('should list 3 contacts', async function (assert) {  await visit('/');
     assert.equal(this.element.querySelectorAll('.listing').length, 4, 'should display 3 listings');
   });
+  
   test('should link to New Contact route', async function (assert) {
     await visit('/');
     await click(".menu-new-contact");
