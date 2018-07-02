@@ -1,9 +1,11 @@
 import { module, test } from 'qunit';
+import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import { click, visit, currentURL } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 
 module('Acceptance | contact list', function(hooks) {
   setupApplicationTest(hooks);
+  setupMirage(hooks);
 
   test('should show Contact List as the home page', async function (assert) {
     await visit('/');
@@ -13,7 +15,7 @@ module('Acceptance | contact list', function(hooks) {
   test('should list 3 contacts', async function (assert) {  await visit('/');
     assert.equal(this.element.querySelectorAll('.listing').length, 4, 'should display 3 listings');
   });
-  
+
   test('should link to New Contact route', async function (assert) {
     await visit('/');
     await click(".menu-new-contact");
