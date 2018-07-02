@@ -1,5 +1,5 @@
 <button class="links">
-    {{#link-to "new-contact" class="menu-new-contact"}} Add Contact {{/link-to}}
+    {{#link-to "new-contact" class="button menu-new-contact"}} Add Contact {{/link-to}}
 </button>
 <div class="listing">
     <h3>Bill Sacks</h3>
@@ -12,7 +12,11 @@
         <span>Email:</span> 
         <a href="bill@sacksagency.com">bill@sacksagency.com</a>
     </div>
+
 </div>
 {{#each model as |contactListing|}}
   {{contact-listing contact=contactListing}}
+{{!--     <div class="detail edit">
+        {{#link-to "new-contact" class="button"}} Edit {{/link-to}}
+    </div> --}}
 {{/each}}

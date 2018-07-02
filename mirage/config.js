@@ -5,33 +5,33 @@ export default function() {
     return {
       data: [{
         type: 'contact-list',
-        id: 'grand-old-mansion',
+        id: 'margaret-gonzalez',
         attributes: {
-          fn: 'Grand Old Mansion',
-          ln: 'Veruca Salt',
-          p: 'San Francisco',
-          email: 'Estate',
-          image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg'
+          fn: 'Margaret',
+          ln: 'Gonzalez',
+          p: '2139893898',
+          email: 'margonzo@hotmail.com',
+          image: 'https://upload.wikimedia.org/wikipedia/commons/f/fe/Michelle_Borromeo_Actor_Headshots_30.jpg'
         }
       }, {
         type: 'contact-list',
-        id: 'urban-living',
+        id: 'gary-owens',
         attributes: {
-          fn: 'Urban Living',
-          ln: 'Mike Teavee',
-          p: 'Seattle',
-          email: 'Condo',
-          image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg'
+          fn: 'Gary',
+          ln: 'Owens',
+          p: '2138739275',
+          email: 'gowens1979@gmail.com',
+          image: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Jamie_Marsh_Headshot.jpg'
         }
       }, {
         type: 'contact-list',
-        id: 'downtown-charm',
+        id: 'melissa-morris',
         attributes: {
-          fn: 'Downtown Charm',
-          ln: 'Violet Beauregarde',
-          p: 'Portland',
-          email: 'Apartment',
-          image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
+          fn: 'Melissa',
+          ln: 'Morris',
+          p: '2138398468',
+          email: 'mmorris@yahoo.com',
+          image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Alissa_Moreno.jpg'
         }
       }]
     };
